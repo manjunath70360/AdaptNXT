@@ -42,6 +42,7 @@ const App = () => {
     if (weather === 'Clouds') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/cloud_eijeb3.png';
     if (weather === 'Drizzle') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/drizzle_maygnu.png';
     if (weather === 'Clear') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/sun_sscjae.png';
+    if (weather === 'Clear Sky') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/sun_sscjae.png';
     return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/drizzle_maygnu.png';
   };
 
