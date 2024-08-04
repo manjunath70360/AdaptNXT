@@ -40,9 +40,10 @@ const App = () => {
 
   const getWeatherImage = (weather) => {
     if (weather === 'Clouds') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/cloud_eijeb3.png';
+    if (weather === 'haze') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/cloud_eijeb3.png';
     if (weather === 'Drizzle') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/drizzle_maygnu.png';
     if (weather === 'Clear') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/sun_sscjae.png';
-    if (weather === 'Clear Sky') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/sun_sscjae.png';
+    if (weather === 'clear sky') return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/sun_sscjae.png';
     return 'https://res.cloudinary.com/dwwunc51b/image/upload/v1722767300/drizzle_maygnu.png';
   };
 
@@ -50,7 +51,8 @@ const App = () => {
     if (weather === 'Clouds') return 'cloudy';
     if (weather === 'Drizzle') return 'drizzle';
     if (weather === 'Clear') return 'clear';
-    return 'drizzle';
+    if (weather === 'clear sky') return 'clear';
+     return 'drizzle';
   };
 
   return (
