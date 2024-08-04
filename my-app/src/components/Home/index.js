@@ -13,7 +13,7 @@ const App = () => {
   const fetchWeather = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/weather`, {
+      const response = await axios.get(`https://adaptnxt-vgay.onrender.com/weather`, {
         params: {
           city: city
         }
